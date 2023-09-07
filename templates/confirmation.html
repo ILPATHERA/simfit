@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,6 +17,12 @@
 
   </head>
   <body>
+    <div class="alert alert-dark alert-dismissible fade show" role="alert">
+        <strong>Hallo!</strong> {{ message }}
+        <button id="closeButton" type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
     <!-- Hero section -->
     <section id="infinite" class="text-white tm-font-big tm-parallax">
       <!-- Navigation -->
@@ -571,7 +579,10 @@
         ]
         });
       });
-          
+    
+      document.getElementById("closeButton").addEventListener("click", function () {
+            window.location.href = "{{ url_for('index') }}";
+        });
     </script>
   </body>
 </html>
