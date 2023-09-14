@@ -32,4 +32,4 @@ def error():
     return render_template('confirmation.html', message=message)
 
 if __name__ == '__main__':
-    app.run(app.debug=True)
+    app.run(debug=True)
