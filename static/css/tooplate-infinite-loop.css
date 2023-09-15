@@ -517,8 +517,9 @@ figure.effect-honey:hover h2 i {
 
 #contact {
   color: white;
-  background-color: #001828;
+  background-color: #3b3c45;
   background-image: url(../img/infinite-loop-03.jpg);
+  /*background-image: url(../img/infinite-loop-02-mobile2.jpg);*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -892,33 +893,138 @@ input[type="range"]::-moz-range-thumb {
   margin-top: -8px;
 }
 
-/* Stil für den zweiten Radio-Button (Anmelden) */
-.radiobutton-2 input[type="radio"] {
-  display: none;
-}
-
-.radiobutton-2 label {
-  display: block;
-  background-color: transparent;
-  color: #707070;
-  border: 1px solid var(--line-color);
-  border-radius: 0; /* Ändere den Radius, um ihn zu entfernen */
-  padding: 8px 16px;
+.slider {
+  position: absolute;
   cursor: pointer;
-  width: 40%; /* Setze die Breite auf 100% */
-  text-align: center; /* Zentriere den Text */
-  transition: background-color 0.3s, color 0.3s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-/* Stil für den zweiten Radio-Button-Label (Anmelden) beim :hover-Zustand */
-.radiobutton-2 label:hover {
-  background-color: #ced4da;
-  color: #000;
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-/* Stil für den ausgewählten zweiten Radio-Button (Anmelden) */
-.radiobutton-2 input[type="radio"]:checked + label {
-  background-color: #ced4da;
-  color: #000;
-  font-weight: bold;
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+
+.switch {
+  display: inline-block;
+  font-size: 20px; /* 1 */
+  height: 1em;
+  width: 2em;
+  background: #3440eb;
+  border-radius: 1em;
+}
+
+.switch div {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: #FFF;
+  box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+  -webkit-transition: all 300ms;
+     -moz-transition: all 300ms;
+          transition: all 300ms;
+}
+
+.switch input:checked + div {
+  -webkit-transform: translate3d(100%, 0, 0);
+     -moz-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
+
+/* CSS-Styling für das Dropdown-Menü */
+select#abnehmenOderZunehmen {
+  background-color: #f2f2f2; /* Hintergrundfarbe des geschlossenen Dropdown-Menüs */
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  height: 47px;
+
+}
+
+/* CSS-Styling für die Dropdown-Optionen */
+select#abnehmenOderZunehmen option {
+  background-color: gray; /* Hintergrundfarbe der Dropdown-Optionen */
+  color: #fff; /* Textfarbe der Dropdown-Optionen */
+}
+
+select#genderselect {
+  background-color: #f2f2f2; /* Hintergrundfarbe des geschlossenen Dropdown-Menüs */
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  height: 47px;
+
+}
+
+/* CSS-Styling für die Dropdown-Optionen */
+select#genderselect option {
+  background-color: gray; /* Hintergrundfarbe der Dropdown-Optionen */
+  color: #fff; /* Textfarbe der Dropdown-Optionen */
+}
+
+select#vielesseroderwenigesser {
+  background-color: #f2f2f2; /* Hintergrundfarbe des geschlossenen Dropdown-Menüs */
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  height: 47px;
+
+}
+
+/* CSS-Styling für die Dropdown-Optionen */
+select#vielesseroderwenigesser option {
+  background-color: gray; /* Hintergrundfarbe der Dropdown-Optionen */
+  color: #fff; /* Textfarbe der Dropdown-Optionen */
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 0.2;
+  
+}
+
+select#vielesseroderwenigesser {
+  background-color: #f2f2f2; /* Hintergrundfarbe des geschlossenen Dropdown-Menüs */
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  height: 47px;
+
+}
+
+/* CSS-Styling für die Dropdown-Optionen */
+select#vielesseroderwenigesser option {
+  background-color: gray; /* Hintergrundfarbe der Dropdown-Optionen */
+  color: #fff; /* Textfarbe der Dropdown-Optionen */
 }

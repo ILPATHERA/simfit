@@ -291,76 +291,127 @@
           </div>
       </div>
     </section>
-
     <!-- Contact -->
     <section id="contact" class="tm-section-pad-top tm-parallax-2">
-    
       <div class="container tm-container-contact">
-        
         <div class="row">
           <div class="text-center col-12">
-              <h2 class="tm-section-title mb-4">Kontaktiere mich</h2>
-              <p class="mb-5">
-                  Jetzt ist der perfekte Zeitpunkt, um deinen ersten Schritt auf dem Weg zu einem gesünderen und glücklicheren Lebensstil zu machen. Ich bin hier, um dich bei der Erreichung deiner Gesundheitsziele zu unterstützen und begleite dich auf diesem aufregenden Weg. Nutze das Kontaktformular unten, um den ersten Schritt zu machen. Gemeinsam werden wir dein volles Potenzial entfalten und deine Ziele erreichen. Worauf wartest du noch? Lass uns zusammenarbeiten, um deine Gesundheit und dein Wohlbefinden zu verbessern!
-              </p>
-              <div class="radiobutton-2">
-                <input id="optionQuestions" type="radio" name="contactOption" value="questions" checked>
-                <label for="optionQuestions">Fragen</label>
-            </div>
-            <div class="radiobutton-2">
-                <input id="optionRegistration" type="radio" name="contactOption" value="registration">
-                <label for="optionRegistration">Anmelden</label>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-6">
-              <form action="/submit_form" method="POST" id="contactForm">
-                  <input id="name" name="name" type="text" placeholder="Dein Name" class="tm-input" required />
-                  <input id="email" name="email" type="email" placeholder="Deine Email" class="tm-input" required />
-                  <textarea id="message" name="message" rows="8" placeholder="Nachricht" class="tm-input" required></textarea>
-                  <button type="submit" class="btn tm-btn-submit">Submit</button>
-              </form>
-      
-              <!-- Formular für die Anmeldung -->
-              <form action="/submit_registration" method="POST" id="registrationForm" style="display: none;">
-                  <!-- Hier die Felder für die Anmeldung einfügen -->
-                  <button type="submit" class="btn tm-btn-submit">Anmelden</button>
-                  <button type="button" class="btn tm-btn-submit" id="cancelRegistration">Abbrechen</button>
-              </form>
-          </div>
-      
-          <div class="col-sm-12 col-md-6">
-      
-              <!-- Kontaktelemente (WhatsApp und Instagram) -->
-              <div class="contact-item">
-                  <a rel="nofollow" href="https://api.whatsapp.com/send?phone=0765336444" class="item-link">
-                      <i class="far fa-2x fa-comment mr-4"></i>
-                      <span class="mb-0">Whatsapp</span>
-                  </a>
+            <h2 class="tm-section-title mb-4">Kontaktiere mich</h2>
+            <p class="mb-5">
+              Jetzt ist der perfekte Zeitpunkt, um deinen ersten Schritt auf dem Weg zu einem gesünderen und glücklicheren Lebensstil zu machen. Ich bin hier, um dich bei der Erreichung deiner Gesundheitsziele zu unterstützen und begleite dich auf diesem aufregenden Weg. Nutze das Kontaktformular unten, um den ersten Schritt zu machen. Gemeinsam werden wir dein volles Potenzial entfalten und deine Ziele erreichen. Worauf wartest du noch? Lass uns zusammenarbeiten, um deine Gesundheit und dein Wohlbefinden zu verbessern!
+            </p>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                </div>
+                <div class="col-sm">
+                  <div class="container">
+                    <label class="switch" for="switch"><input type="checkbox" id="switch"/>    <div></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-sm">
+                </div>
               </div>
-              <div class="contact-item">
+            </div>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <form action="/submit_form" method="POST" id="contactForm">
+              <input id="name" name="name" type="text" placeholder="Dein Name" class="tm-input" required style="align-content: center;"/>
+              <input id="email" name="email" type="email" placeholder="Deine Email" class="tm-input" required />
+              <textarea id="message" name="message" rows="8" placeholder="Nachricht" class="tm-input" required></textarea>
+              <button type="submit" class="btn tm-btn-submit" style="width:91%;">Senden</button>
+            </form>
+              <form action="/submit_registration" method="POST" id="registrationForm">
+                <input type="text" id="textField1" name="textField1" placeholder="Vorname" class="tm-input" required />
+                <select id="genderselect" name="genderselect" class="tm-input" required style="background-color: transparent;">
+                  <option value="" style="display: none;">Geschlecht</option>
+                  <option value="Abnehmen">Weiblich</option>
+                  <option value="Zunehmen">Männlich</option>
+                </select>
+                <input type="number" id="textField4" name="textField4" placeholder="Grösse (cm)" class="tm-input" required min="130" max="230" />
+                <label for="textField5">Beruf und Bewegung im Alltag:</label>
+                <textarea type="text" id="textField5" name="textField5" rows="8" class="tm-input" required ></textarea>
+                <label for="textField6">Grober Tagesablauf</label>
+                <textarea type="text" id="textField6" name="textField6" rows="8" class="tm-input" required></textarea>
+                <label for="textField7">Was isst du gerne?</label>
+                <textarea type="text" id="textField7" name="textField7" rows="8" class="tm-input" required ></textarea>
+                <select id="abnehmenOderZunehmen" name="abnehmenOderZunehmen" class="tm-input" required style="background-color: transparent;">
+                  <option value= "" style="display: none;">Stoffwechseltyp</option>
+                  <option value="Abnehmen">Nehme schnell zu</option>
+                  <option value="Zunehmen">Nehme schwer zu</option>
+                </select>
+                <label for="textField8">Was isst du gerne?</label>
+                <textarea type="text" id="textField8" name="textField8" rows="8" class="tm-input" required ></textarea>
+                <label for="textField14">Aktuelles Wohlbefinden</label>
+                <textarea type="text" id="textField14" name="textField14" rows="8" class="tm-input"  required ></textarea>
+                <label for="textField16" >Spezielle Wünsche oder Anmerkungen</label>
+                <textarea type="text" id="textField16" name="textField16" rows="8" class="tm-input"  required ></textarea>
+              </form>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div id="registrationForm2">
+              <form action="/submit_registration" method="POST" id="registrationForm3">
+                <input type="text" id="lastname" name="lastname" placeholder="Nachname" class="tm-input" required style="margin-left: 40px;"/>
+                <input type="number" id="textField3" name="textField3" placeholder="Aktuelles Gewicht (kg)" class="tm-input" required style="margin-left: 40px;" min="40" max="150"/>
+                <select id="abnehmenOderZunehmen" name="abnehmenOderZunehmen" class="tm-input" required style="background-color: transparent; margin-left: 40px;">
+                  <option value="" style="display: none;">Ziel</option>
+                  <option value="Abnehmen">Abnehmen</option>
+                  <option value="Zunehmen">Zunehmen</option>
+                  <option value="Zunehmen">Gewicht halten</option>
+                </select>
+                <label for="textField10" style="margin-left: 40px;">Dein Ziel und optional ein Bild deines Ziels</label>
+                <textarea type="text" id="textField10" name="textField10" rows="4" class="tm-input" required style="margin-left: 40px;"></textarea>
+                <label for="image" style="margin-left: 40px;">Bild auswählen:</label>
+                <input type="file" id="image" name="image" accept="image/*" required style="margin-left: 40px;  margin-bottom: 48px;"/>
+                <label for="textField9" style="margin-left: 40px;">Trainingshäufigkeit (Sportart, Wochentage, Dauer)</label>
+                <textarea type="text" id="textField9" name="textField9" rows="8" class="tm-input" required style="margin-left: 40px;"></textarea>
+                <label for="textField11" style="margin-left: 40px;">Supplements</label>
+                <textarea type="text" id="textField11" name="textField11" rows="8" class="tm-input" required style="margin-left: 40px;"></textarea>
+                <select id="vielesseroderwenigesser" name="vielesseroderwenigesser" class="tm-input" required style="background-color: transparent; margin-left: 40px;">
+                  <option value="" style="display: none;">Essverhalten</option>
+                  <option value="Abnehmen">Vielesser</option>
+                  <option value="Zunehmen">Wenigesser</option>
+                </select>
+                <label for="textField12" style="margin-left: 40px;">Aktuelle Ernährungsgewohnheiten</label>
+                <textarea type="text" id="textField12" name="textField12" rows="8" class="tm-input" placeholder="Grobe Auflistung oder Beispiel" required style="margin-left: 40px;"></textarea>
+                <label for="textField13" style="margin-left: 40px;">Allergien/Unverträglichkeiten</label>
+                <textarea type="text" id="textField13" name="textField13" rows="8" class="tm-input"  required style="margin-left: 40px;"></textarea>
+                <label for="textField15" style="margin-left: 40px;">Sonstiges/Bemerkungen</label>
+                <textarea type="text" id="textField15" name="textField15" rows="8" class="tm-input"  required style="margin-left: 40px;"></textarea>
+              </form>
+            </div>
+            <div class="contact-item">
+              <div class="contaus">
+                <a rel="nofollow" href="https://api.whatsapp.com/send?phone=0765336444" class="item-link">
+                <i class="far fa-2x fa-comment mr-4"></i>
+                <span class="mb-0">Whatsapp</span>
+                </a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contaus">
                   <a rel="nofollow" href="tel:0100200340" class="item-link">
-                      <i class="fas fa-2x fa-phone-square mr-4"></i>
-                      <span class="mb-0">Instagram</span>
+                  <i class="fas fa-2x fa-phone-square mr-4"></i>
+                  <span class="mb-0">Instagram</span>
                   </a>
               </div>
-      
-              <div class="contact-item">&nbsp;</div>
+            </div>
+            <div class="contact-item">&nbsp;</div>
           </div>
+        </div>
       </div>
-      
-        
-      </div>
-
-      	<footer class="text-center small tm-footer">
-          <p class="mb-0">
-          
-          
-          <a rel="nofollow" href="https://www.tooplate.com" title="HTML templates"></a></p>
-        </footer>
-
+      <footer class="text-center small tm-footer">
+        <p class="mb-0">
+          <a rel="nofollow" href="https://www.tooplate.com" title="HTML templates"></a>
+        </p>
+      </footer>
+      <button type="submit" class="btn tm-btn-submit mx-auto d-block" style="width: 10%;" id="registrationSubmitButton">Senden</button>
     </section>
-    
     <script src="{{ url_for('static', filename='js/jquery-1.9.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/slick/slick.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
@@ -552,38 +603,40 @@
         });
       });
       
-          // JavaScript, um die Anzeige des Formulars basierend auf dem Radio-Button auszuwählen
-    const contactForm = document.getElementById('contactForm');
-    const registrationForm = document.getElementById('registrationForm');
-    const optionQuestions = document.getElementById('optionQuestions');
-    const optionRegistration = document.getElementById('optionRegistration');
-    const cancelRegistration = document.getElementById('cancelRegistration');
+      const switchElement = document.getElementById("switch");
+    const contactForm = document.getElementById("contactForm");
+    const registrationForm = document.getElementById("registrationForm");
+    const registrationForm2 = document.getElementById("registrationForm2");
 
-    // Funktion zum Anzeigen des Anmeldeformulars
-    function showRegistrationForm() {
-        contactForm.style.display = 'none';
-        registrationForm.style.display = 'block';
-    }
+    // Kontaktinformationen standardmäßig anzeigen
+    contactForm.style.display = "block";
+    
+    // Formular standardmäßig ausblenden
+    registrationForm.style.display = "none";
+    registrationForm2.style.display = "none";
 
-    // Funktion zum Zurückkehren zum ursprünglichen Formular
-    function cancelRegistrationForm() {
-        contactForm.style.display = 'block';
-        registrationForm.style.display = 'none';
-        optionQuestions.checked = true; // Zurücksetzen auf "Fragen"
-    }
-
-    // Event-Listener für die Radio-Buttons
-    optionQuestions.addEventListener('change', () => {
-        cancelRegistrationForm();
+    switchElement.addEventListener("change", function () {
+      if (switchElement.checked) {
+        contactForm.style.display = "none";
+        registrationForm.style.display = "block";
+        registrationForm2.style.display = "block";
+        // Kontaktinformationen ausblenden
+        document.querySelectorAll(".contaus").forEach(function (item) {
+          item.style.display = "none";
+        });
+      } else {
+        contactForm.style.display = "block";
+        registrationForm.style.display = "none";
+        registrationForm2.style.display = "none";
+        // Kontaktinformationen einblenden
+        document.querySelectorAll(".contaus").forEach(function (item) {
+          item.style.display = "block";
+        });
+      }
     });
 
-    optionRegistration.addEventListener('change', () => {
-        showRegistrationForm();
-    });
-
-    // Event-Listener für den Abbrechen-Button im Anmeldeformular
-    cancelRegistration.addEventListener('click', () => {
-        cancelRegistrationForm();
+    document.getElementById("registrationSubmitButton").addEventListener("click", function() {
+    document.getElementById("registrationForm").submit();
     });
     </script>
   </body>
