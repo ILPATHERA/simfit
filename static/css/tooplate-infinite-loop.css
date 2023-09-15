@@ -891,3 +891,34 @@ input[type="range"]::-moz-range-thumb {
   -webkit-appearance: none;
   margin-top: -8px;
 }
+
+/* Stil für den zweiten Radio-Button (Anmelden) */
+.radiobutton-2 input[type="radio"] {
+  display: none;
+}
+
+.radiobutton-2 label {
+  display: block;
+  background-color: transparent;
+  color: #707070;
+  border: 1px solid var(--line-color);
+  border-radius: 0; /* Ändere den Radius, um ihn zu entfernen */
+  padding: 8px 16px;
+  cursor: pointer;
+  width: 40%; /* Setze die Breite auf 100% */
+  text-align: center; /* Zentriere den Text */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Stil für den zweiten Radio-Button-Label (Anmelden) beim :hover-Zustand */
+.radiobutton-2 label:hover {
+  background-color: #ced4da;
+  color: #000;
+}
+
+/* Stil für den ausgewählten zweiten Radio-Button (Anmelden) */
+.radiobutton-2 input[type="radio"]:checked + label {
+  background-color: #ced4da;
+  color: #000;
+  font-weight: bold;
+}
