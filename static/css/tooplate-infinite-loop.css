@@ -1015,7 +1015,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 select#vielesseroderwenigesser {
-  background-color: #f2f2f2; /* Hintergrundfarbe des geschlossenen Dropdown-Menüs */
+  background-color: rgba(255, 255, 255, 0.2); /* Hintergrundfarbe des geschlossenen Dropdown-Menüs */
   border: 1px solid #ccc;
   padding: 5px;
   border-radius: 4px;
@@ -1027,4 +1027,72 @@ select#vielesseroderwenigesser {
 select#vielesseroderwenigesser option {
   background-color: gray; /* Hintergrundfarbe der Dropdown-Optionen */
   color: #fff; /* Textfarbe der Dropdown-Optionen */
+}
+
+.formreg {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontal zentrieren */
+  justify-content: center; /* Vertikal zentrieren */
+  text-align: center; /* Text in der Mitte zentrieren */
+}
+.formreg .tm-input {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff; /* Textfarbe auf Weiß setzen */
+}
+
+/* Textfelder und Dropdown-Menüs innerhalb der .formreg-Klasse */
+.formreg .tm-input, 
+.formreg select.tm-input {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff; /* Textfarbe auf Weiß setzen */
+}
+
+select#zielart {
+  background-color: rgba(255, 255, 255, 0.2); /* Hintergrundfarbe des geschlossenen Dropdown-Menüs */
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  height: 47px;
+
+}
+
+/* CSS-Styling für die Dropdown-Optionen */
+select#zielart option {
+  background-color: gray; /* Hintergrundfarbe der Dropdown-Optionen */
+  color: #fff; /* Textfarbe der Dropdown-Optionen */
+}
+/* Textfelder innerhalb der .formreg-Klasse */
+.formreg input.tm-input[type="text"],
+.formreg textarea.tm-input {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+}
+
+/* Dropdown-Menüs innerhalb der .formreg-Klasse */
+.formreg select.tm-input {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+}
+.formreg hr {
+  border: none; /* Entfernt die Standard-Rahmenlinie */
+  height: 3px; /* Ändert die Höhe der horizontalen Linie */
+  background-color: #fff; /* Ändert die Farbe der horizontalen Linie */
+  opacity: 0.2; /* Ändert die Deckkraft der horizontalen Linie */
+  margin: 20px 0; /* Ändert den Abstand oben und unten */
+}
+
+.formreg .tm-btn-submit {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.formreg .tm-btn-submit:hover {
+  color: #fff;
+  background-color: #38B;
+}
+
+.formreg p {
+  color: #fff;
+  text-align: center;
 }

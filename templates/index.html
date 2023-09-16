@@ -321,9 +321,9 @@
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <form action="/submit_form" method="POST" id="contactForm">
-              <input id="name" name="name" type="text" placeholder="Dein Name" class="tm-input" required style="align-content: center;"/>
-              <input id="email" name="email" type="email" placeholder="Deine Email" class="tm-input" required />
-              <textarea id="message" name="message" rows="8" placeholder="Nachricht" class="tm-input" required></textarea>
+              <input id="name" name="name" type="text" placeholder="Dein Name" class="tm-input" required style="align-content: center; background-color: rgba(255, 255, 255, 0.2);"/>
+              <input id="email" name="email" type="email" placeholder="Deine Email" class="tm-input" required style="background-color: rgba(255, 255, 255, 0.2);"/>
+              <textarea id="message" name="message" rows="8" placeholder="Nachricht" class="tm-input" required style="background-color: rgba(255, 255, 255, 0.2);"></textarea>
               <button type="submit" class="btn tm-btn-submit" style="width:91%;">Senden</button>
             </form>
             </div>
@@ -352,90 +352,122 @@
           <a rel="nofollow" href="https://www.tooplate.com" title="HTML templates"></a>
         </p>
       </footer>
-      <form action="/submit_registration" method="POST" id="registrationForm">
-        <!--Persöhnliche Angaben-->
-        <hr>
-        <h5 style="font-weight: bold;">Persöhnliche Angaben</h5>
-        <br>
-        <input type="text" id="vorname" name="vorname" placeholder="Vorname" class="tm-input" required/>
-        <input type="text" id="nachname" name="nachname" placeholder="Nachname" class="tm-input" required/>
-        <input id="emailreg" name="emailreg" type="email" placeholder="Deine Email" class="tm-input" required />
-        <select id="genderselect" name="genderselect" class="tm-input" required style="background-color: transparent;">
-          <option value="" style="display: none;">Geschlecht</option>
-          <option value="Abnehmen">Weiblich</option>
-          <option value="Zunehmen">Männlich</option>
-        </select>
-        <input type="number" id="alter" name="alter" placeholder="Alter" class="tm-input" required min="18" max="100" />
-        <input type="number" id="groesse" name="groesse" placeholder="Grösse (cm)" class="tm-input" required min="130" max="230" />
-        <input type="number" id="gewicht" name="gewicht" placeholder="Aktuelles Gewicht (kg)" class="tm-input" required  min="40" max="150"/>
-        <!--Lifestyle-->
-        <hr>
-        <h5 style="font-weight: bold;">Dein Lifestyle</h5>
-        <br>
-        <label for="beruf">Beruf und Bewegung im Alltag:</label>
-        <textarea type="text" id="beruf" name="beruf" rows="8" class="tm-input" required ></textarea>
-        <label for="tagesablauf">Grober Tagesablauf</label>
-        <textarea type="text" id="tagesablauf" name="tagesablauf" rows="8" class="tm-input" required></textarea>
-        <hr>
-        <h5 style="font-weight: bold;">Deine Ernährung</h5>
-        <br>
-        <label for="wasessen">Was isst du gerne?</label>
-        <textarea type="text" id="wasessen" name="wasessen" rows="8" class="tm-input" required ></textarea>
-        <label for="wasessenzeit">Was isst du zurzeit?</label>
-        <textarea type="text" id="wasessenzeit" name="wasessengerne" rows="8" class="tm-input" required ></textarea>
-        <select id="vielesseroderwenigesser" name="vielesseroderwenigesser" class="tm-input" required style="background-color: transparent;>
-          <option value="" style="display: none;">Essverhalten</option>
-          <option value="Vielesser">Vielesser</option>
-          <option value="Wenigesser">Wenigesser</option>
-        </select>
-        <br>
-        <label for="supps" >Supplements</label><br>
-        <textarea type="text" id="supps" name="supps" rows="8" class="tm-input" required></textarea>
-        <label for="gewohnheitessen" >Aktuelle Ernährungsgewohnheiten</label>
-        <textarea type="text" id="gewohnheitessen" name="gewohnheitessen" rows="8" class="tm-input" placeholder="Grobe Auflistung oder Beispiel" required ></textarea>
-        <label for="allergie" >Allergien/Unverträglichkeiten</label>
-        <textarea type="text" id="allergie" name="allergie" rows="8" class="tm-input"  required></textarea>
-        <!--Stoffwechsel-->
-        <hr>
-        <h5 style="font-weight: bold;">Dein Stoffwechsel</h5>
-        <br>
-        <select id="abnehmenOderZunehmen" name="abnehmenOderZunehmen" class="tm-input" required style="background-color: transparent;">
-          <option value= "" style="display: none;">Stoffwechseltyp</option>
-          <option value="Abnehmen">Nehme schnell zu</option>
-          <option value="Zunehmen">Nehme schwer zu</option>
-        </select>
-        <!--Training-->
-        <hr>
-        <h5 style="font-weight: bold;">Dein Training</h5>
-        <br>
-        <label for="trainingshaufigkeit" >Trainingshäufigkeit (Sportart, Wochentage, Dauer)</label>
-        <textarea type="text" id="trainingshaufigkeit" name="trainingshaufigkeit" rows="8" class="tm-input" required ></textarea>
-        <!--Wohlbefinden-->
-        <hr>
-        <h5 style="font-weight: bold;">Wohlbefinden und Wünsche</h5>
-        <br>
-        <label for="wohlbefinden">Aktuelles Wohlbefinden</label>
-        <textarea type="text" id="wohlbefinden" name="wohlbefinden" rows="8" class="tm-input"  required ></textarea>
-        <label for="wunsche" >Spezielle Wünsche oder Anmerkungen</label>
-        <textarea type="text" id="wunsche" name="wunsche" rows="8" class="tm-input"  required ></textarea>
-        <!--Ziel-->
-        <h5 style="font-weight: bold;">Ziel</h5>
-        <label for="ziel">Dein Ziel und optional ein Bild deines Ziels</label>
-        <textarea type="text" id="ziel" name="ziel" rows="4" class="tm-input" required></textarea>
-        <select id="abnehmenOderZunehmen" name="abnehmenOderZunehmen" class="tm-input" required style="background-color: transparent;">
-          <option value="" style="display: none;">Ziel</option>
-          <option value="Abnehmen">Abnehmen</option>
-          <option value="Zunehmen">Zunehmen</option>
-          <option value="Zunehmen">Gewicht halten</option>
-        </select>
-        <!--Sonstiges-->
-        <label for="bemerkung" >Sonstiges/Bemerkungen</label>
-        <textarea type="text" id="bemerkung" name="bemerkung" rows="8" class="tm-input"  required ></textarea>
-      </form>
+      <div class="formreg">
+        <form action="/submit_registration" method="POST" id="registrationForm">
+          <!-- Persönliche Angaben -->
+          <hr>
+          <h5 style="font-weight: bold;">Persönliche Angaben</h5>
+          <br>
+          <p>
+            Hier gibst du deine grundlegenden persönlichen Informationen an, dazu gehören dein Name,
+            deine E-Mail-Adresse, dein Geschlecht, Alter, Größe und Gewicht.
+          </p>
+          <input type="text" id="vorname" name="vorname" placeholder="Vorname" class="tm-input" required />
+          <input type="text" id="nachname" name="nachname" placeholder="Nachname" class="tm-input" required />
+          <input id="emailreg" name="emailreg" type="email" placeholder="Deine Email" class="tm-input" required />
+          <select id="genderselect" name="genderselect" class="tm-input" required style="background-color: transparent;">
+            <option value="" style="display: none;">Geschlecht</option>
+            <option value="Weiblich">Weiblich</option>
+            <option value="Männlich">Männlich</option>
+          </select>
+          <input type="number" id="alter" name="alter" placeholder="Alter" class="tm-input" required min="18" max="100" />
+          <input type="number" id="groesse" name="groesse" placeholder="Grösse (cm)" class="tm-input" required min="130" max="230" />
+          <input type="number" id="gewicht" name="gewicht" placeholder="Aktuelles Gewicht (kg)" class="tm-input" required min="40" max="150" />
+          <!-- Lifestyle -->
+          <hr>
+          <h5 style="font-weight: bold;">Dein Lifestyle</h5>
+          <br>
+          <p>
+            In diesem Abschnitt beschreibst du deinen täglichen Lebensstil, einschließlich deines Berufs, deiner alltäglichen Bewegung und eines groben Tagesablaufs.
+          </p>
+          <label for="beruf">Beruf und Bewegung im Alltag:</label>
+          <textarea type="text" id="beruf" name="beruf" rows="8" class="tm-input" required></textarea>
+          <label for="tagesablauf">Grober Tagesablauf</label>
+          <textarea type="text" id="tagesablauf" name="tagesablauf" rows="8" class="tm-input" required></textarea>
+          <!-- Deine Ernährung -->
+          <hr>
+          <h5 style="font-weight: bold;">Deine Ernährung</h5>
+          <br>
+          <p>
+            Hier gibst du Einblicke in deine Ernährungsgewohnheiten, einschließlich deiner Vorlieben, dessen, was du derzeit isst, deines Essverhaltens, möglicher Nahrungsergänzungsmittel und eventueller Allergien oder Unverträglichkeiten.
+          </p>
+          <label for="wasessen">Was isst du gerne?</label>
+          <textarea type="text" id="wasessen" name="wasessen" rows="8" class="tm-input" required></textarea>
+          <label for="wasessenzeit">Was isst du zurzeit?</label>
+          <textarea type="text" id="wasessenzeit" name="wasessenzeit" rows="8" class="tm-input" required></textarea>
+          <select id="vielesseroderwenigesser" name="vielesseroderwenigesser" class="tm-input" required style="background-color: transparent;">
+            <option value="" style="display: none;">Essverhalten</option>
+            <option value="Vielesser">Vielesser</option>
+            <option value="Wenigesser">Wenigesser</option>
+          </select>
+          <br>
+          <label for="supps">Supplements</label><br>
+          <textarea type="text" id="supps" name="supps" rows="8" class="tm-input" required></textarea>
+          <label for="gewohnheitessen">Aktuelle Ernährungsgewohnheiten</label>
+          <textarea type="text" id="gewohnheitessen" name="gewohnheitessen" rows="8" class="tm-input" placeholder="Grobe Auflistung oder Beispiel" required></textarea>
+          <label for="allergie">Allergien/Unverträglichkeiten</label>
+          <textarea type="text" id="allergie" name="allergie" rows="8" class="tm-input" required></textarea>
+          <!-- Stoffwechsel -->
+          <hr>
+          <h5 style="font-weight: bold;">Dein Stoffwechsel</h5>
+          <br>
+          <p>
+            Hier wählst du deinen Stoffwechseltyp aus, der entweder "Nehme schnell zu" oder "Nehme schwer zu" sein kann.
+          </p>
+          <select id="abnehmenOderZunehmen" name="abnehmenOderZunehmen" class="tm-input" required style="background-color: transparent;">
+            <option value="" style="display: none;">Stoffwechseltyp</option>
+            <option value="Nehme schnell zu">Nehme schnell zu</option>
+            <option value="Nehme schwer zu">Nehme schwer zu</option>
+          </select>
+          <!-- Training -->
+          <hr>
+          <h5 style="font-weight: bold;">Dein Training</h5>
+          <br>
+          <p>
+            In diesem Abschnitt beschreibst du deine Trainingsroutine, einschließlich der Art des Sports, der Wochentage, an denen du trainierst, und der Dauer deiner Übungen.
+          </p>
+          <label for="trainingshaufigkeit">Trainingshäufigkeit (Sportart, Wochentage, Dauer)</label>
+          <textarea type="text" id="trainingshaufigkeit" name="trainingshaufigkeit" rows="8" class="tm-input" required></textarea>
+          <!-- Wohlbefinden -->
+          <hr>
+          <h5 style="font-weight: bold;">Wohlbefinden und Wünsche</h5>
+          <br>
+          <p>
+            Hier teilst du Informationen über dein aktuelles Wohlbefinden und eventuelle spezielle Wünsche oder Anmerkungen bezüglich deiner Gesundheit und Fitness mit.
+          </p>
+          <label for="wohlbefinden">Aktuelles Wohlbefinden</label>
+          <textarea type="text" id="wohlbefinden" name="wohlbefinden" rows="8" class="tm-input" required></textarea>
+          <label for="wunsche">Spezielle Wünsche oder Anmerkungen</label>
+          <textarea type="text" id="wunsche" name="wunsche" rows="8" class="tm-input" required></textarea>
+          <!-- Ziel -->
+          <hr>
+          <h5 style="font-weight: bold;">Ziel</h5>
+          <br>
+          <p>
+            In diesem Bereich beschreibst du dein persönliches Ziel in Bezug auf deine Gesundheit und Fitness. Du hast auch die Möglichkeit, optional ein Bild oder eine Darstellung deines Ziels hinzuzufügen.
+          </p>
+          <select id="zielart" name="zielart" class="tm-input" required style="background-color: transparent;">
+            <option value="" style="display: none;">Ziel</option>
+            <option value="Abnehmen">Abnehmen</option>
+            <option value="Zunehmen">Zunehmen</option>
+            <option value="Gewicht halten">Gewicht halten</option>
+          </select>
+          <label for="ziel">Dein Ziel und optional ein Bild deines Ziels</label>
+          <textarea type="text" id="ziel" name="ziel" rows="4" class="tm-input" required></textarea>
+          <br>
+          <label for="imageidol" >Bilder auswählen: --></label>
+          <input type="file" id="imageidol" name="imageidol" accept="image/*" multiple required/><br>          
+          <!-- Sonstiges -->
+          <br>
+          <label for="bemerkung">Sonstiges/Bemerkungen</label>
+          <textarea type="text" id="bemerkung" name="bemerkung" rows="8" class="tm-input" required></textarea>
+          <button type="submit" class="btn tm-btn-submit mx-auto d-block" style="width: 10%;" id="registrationSubmitButton">Senden</button>
+        </form>
+      </div>
   </div>
   <div class="col-sm-12 col-md-6">
     <div id="registrationForm2">
-      <button type="submit" class="btn tm-btn-submit mx-auto d-block" style="width: 10%;" id="registrationSubmitButton">Senden</button>
+
     </section>
     <script src="{{ url_for('static', filename='js/jquery-1.9.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/slick/slick.min.js') }}"></script>
