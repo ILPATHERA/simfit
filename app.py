@@ -108,21 +108,20 @@ def submit_registration():
         smtp_user = "patheracoaching@outlook.com"  # Deine E-Mail-Adresse
         smtp_password = "Coaching2023!"  # Dein E-Mail-Passwort
 
-#Images anhängen
-'''        image_tags = ""
-        for image in images:
-            if image.filename != '':
-                image_data = image.read()
-                image_mime_type = image.content_type
-                image_name = image.filename
-                
-                # Bild in Base64 kodieren
-                image_data_base64 = base64.b64encode(image_data).decode('utf-8')
-                
-                # HTML-Tags für das Bild erstellen
-                image_tags += f'<p><strong>{image_name}</strong></p>'
-                image_tags += f'<img src="data:{image_mime_type};base64,{image_data_base64}" />'
-'''
+##        image_tags = ""
+##        for image in images:
+##            if image.filename != '':
+#                image_data = image.read()
+#                image_mime_type = image.content_type
+##                image_name = image.filename
+##                
+##                # Bild in Base64 kodieren
+##                image_data_base64 = base64.b64encode(image_data).decode('utf-8')
+##                
+##                # HTML-Tags für das Bild erstellen
+##                image_tags += f'<p><strong>{image_name}</strong></p>'
+#                image_tags += f'<img src="data:{image_mime_type};base64,{image_data_base64}" />'
+
         subject = f"Neue Registrierung von {vorname} {nachname}"
         body = f"Vorname: {vorname}\n" \
             f"Nachname: {nachname}\n" \
@@ -147,7 +146,7 @@ def submit_registration():
             f"Zielart: {zielart}\n" \
             f"Sonstiges/Bemerkungen:\n{bemerkung}"
 
-        #body += "\nBilder:\n" + image_tags
+        body += "\nBilder:\n" + image_tags
 
         msg = MIMEMultipart()
         msg.attach(MIMEText(body, 'plain'))
