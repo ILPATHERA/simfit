@@ -208,9 +208,81 @@
             </div>
             </div>
             <div class="Lebensmittelrechner" style="display: none;">
-              <p>test</p>
+              <h2 class="text-white text-center mb-4 tm-section-title">Lebensmittelumrechner</h2>
+              <p class="mx-auto tm-section-desc text-center">
+                Der Lebensmittelumrechner hilft dir dabei, die Menge eines alternativen Lebensmittels zu bestimmen, um die gleiche Kalorienmenge wie das geplante Lebensmittel gemäß Plan zu erreichen. Dies ermöglicht Abwechslung in der Ernährung, aber es ist ratsam, die Alternative dennoch mit mir zu besprechen. 
+                </p>
+              <div id="container">
+                <div class="box">
+                  <div class="text">
+                    <h4 class="text-white text-center">Lebensmittel</h4>
+                    <h4 class="text-white text-center">Plan</h4>
+                    <br>
+                    <label for="kcal2"></label>
+                    <input type="text" id="lebensmittelplan" placeholder="Lebensmittel gemäss Plan" class="tm-input">
+                    <br>
+                    <label for="kcal1"></label>
+                    <br>
+                    <input type="number" id="kcal1" placeholder="Kcal/100g" class="tm-input">
+                    <br>
+                    <label for="carbs1"></label>
+                    <br>
+                    <input type="number" id="carbs1" placeholder="Kohlenhydrate/100g" class="tm-input">
+                    <br>
+                    <label for="protein1"></label>
+                    <br>
+                    <input type="number" id="protein1"  placeholder="Protein/100g" class="tm-input">
+                    <br>
+                    <label for="fat1"></label>
+                    <br>
+                    <input type="number" id="fat1" placeholder="Fett/100g" class="tm-input">
+                    <br>
+                  </div>
+                </div>
+                <div class="box">
+                <div class="text">
+                  <h4 class="text-white text-center">Lebensmittel</h4>
+                  <h4 class="text-white text-center">Alternative</h4>
+                    <br>
+                    <label for="kcal2"></label>
+                    <input type="text" id="Lebensmittelalternative" placeholder="Lebensmittel Alternative" class="tm-input">
+                    <br>
+                    <label for="kcal2"></label>
+                    <br>
+                    <input type="number" id="kcal2" placeholder="kcal/100g" class="tm-input">
+                    <br>
+                    <label for="carbs2"></label>
+                    <br>
+                    <input type="number" id="carbs2" placeholder="Kohlenhydrate/100g" class="tm-input">
+                    <br>
+                    <label for="protein2"></label>
+                    <br>
+                    <input type="number" id="protein2" placeholder="Protein/100g" class="tm-input">
+                    <br>
+                    <label for="fat2"></label>
+                    <br>
+                    <input type="number" id="fat2" placeholder="Fett/100g" class="tm-input">
+                    <br>
+                </div>
+                </div>
+              </div>
+                <div class="text">
+                  <hr style="height:3px;">
+                  <label for="kcal3" style="color:white;">KCAL Vorgabe gemäss Plan:</label>
+                  <br>
+                  <input type="number" id="kcal3" style="width:30%; text-align: center;" class="tm-input">
+                  <br>
+                  <input type="hidden" id="meinPlatzhalter" value="Dies ist ein unsichtbarer Platzhalter" class="tm-input">
+                  <br>
+                  <div style="background-color: rgba(255, 255, 255, 0.4);margin-left: 310px; margin-right: 310px;">
+                    <br>
+                    <h5 class="text-black text-center" style="color:black; font-weight: bold;">Resultat</h5>
+                    <button id="calculateButton">Berechnen</button>
+                    <p id="result"></p>
+                    <br>
+                  </div>
+                </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -744,6 +816,33 @@
         lebensmittelrechner.style.display = "none";
       }
     });
+
+
+    document.getElementById("calculateButton").addEventListener("click", function () {
+    // Get the values from the input fields
+    const kcal1 = parseFloat(document.getElementById("kcal1").value);
+    const carbs1 = parseFloat(document.getElementById("carbs1").value);
+    const protein1 = parseFloat(document.getElementById("protein1").value);
+    const fat1 = parseFloat(document.getElementById("fat1").value);
+
+    const kcal2 = parseFloat(document.getElementById("kcal2").value);
+    const carbs2 = parseFloat(document.getElementById("carbs2").value);
+    const protein2 = parseFloat(document.getElementById("protein2").value);
+    const fat2 = parseFloat(document.getElementById("fat2").value);
+
+    const kcal3 = parseFloat(document.getElementById("kcal3").value);
+
+    // Get the names of the foods
+    const lebensmittel1 = document.getElementById("lebensmittelplan").value;
+    const lebensmittel2 = document.getElementById("Lebensmittelalternative").value;
+
+    // Calculate the amount of Lebensmittel 2 needed to match kcal1
+    const amount2 = (kcal1 / kcal2) * 100; // Assuming the input is per 100g
+
+    // Display the result
+    document.getElementById("result").innerHTML = `Du benötigst ${amount2.toFixed(2)}g ${lebensmittel2}, um die gleichen Kalorien wie ${lebensmittel1} (${kcal1} kcal) zu haben, basierend auf den Angaben pro 100g.`;
+});
+
 
     </script>
   </body>

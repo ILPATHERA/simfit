@@ -1099,3 +1099,32 @@ select#zielart option {
   text-align: center;
 }
 
+/*test/*/
+
+.box {
+
+  width:31%;
+  display:inline-block;
+  margin:11px 0;
+  border-radius:6px;
+}
+
+.text {
+  padding:10px 10px 10px 10px;
+  color:black;
+  font-weight:bold;
+  text-align:center;
+}
+
+#container {
+  white-space:nowrap;
+  text-align:center;
+}
+
+input[type="number"] {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+input[type="text"] {
+  background-color: rgba(255, 255, 255, 0.05);
+}
