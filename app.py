@@ -21,6 +21,7 @@ app.secret_key = secret_key_hex
 
 # Diese Variable wird verwendet, um den Nachrichtentext auf der Bestätigungsseite festzulegen
 confirmation_message = None
+confirmation_message_req = ""
 
 @app.route('/')
 def index():
@@ -76,6 +77,8 @@ def contact():
         
 @app.route('/submit_registration', methods=['POST'])
 def submit_registration():
+    global confirmation_message_req
+    
     if request.method == 'POST':
         # Informationen aus dem Formular erfassen
         vorname = request.form['vorname']
@@ -146,7 +149,6 @@ def submit_registration():
             f"Zielart: {zielart}\n" \
             f"Sonstiges/Bemerkungen:\n{bemerkung}"
 
-        body += "\nBilder:\n" + image_tags
 
         msg = MIMEMultipart()
         msg.attach(MIMEText(body, 'plain'))
@@ -169,10 +171,12 @@ def submit_registration():
             # Verbindung schließen
             server.quit()
 
-            return "Deine Registrierung wurde erfolgreich versendet!"
+            confirmation_message_req = 'Deine Anmeldung wurde erfolgreich gesendet!'
+            return redirect(url_for('confirmation_registration'))
         except Exception as e:
             print(f"Fehler beim Senden der E-Mail: {str(e)}")
-            return "Oops, da ist etwas schief gelaufen!"
+            confirmation_message_req = 'Oops, da ist etwas schief gelaufen!'
+            return redirect(url_for('error'))
         
 @app.route('/confirmation')
 def confirmation():
@@ -185,6 +189,14 @@ def confirmation():
 def error():
     message = 'Oops, da ist etwas schief gelaufen!'
     return render_template('confirmation.html', message=message)
+
+@app.route('/confirmation_registration')
+def confirmation_registration():
+    global confirmation_message_req
+    message = confirmation_message_req
+    #confirmation_message_req = None  # Zurücksetzen der Nachricht nach der Anzeige
+    return render_template('confirmation_registration.html', message=message)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

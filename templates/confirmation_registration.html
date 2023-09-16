@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pathera Coaching</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome-5.5/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='slick/slick.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='slick/slick-theme.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='magnific-popup/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tooplate-infinite-loop.css') }}">
+    
+    
+
+  </head>
+  <body>
+    <div class="alert alert-dark alert-dismissible fade show" role="alert">
+        <strong>Hallo!</strong> {{ message }}
+        <button id="closeButton" type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <!-- Hero section -->
+    <section id="infinite" class="text-white tm-font-big tm-parallax">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+        <div class="container">
+          <div class="tm-next">
+              <a href="#infinite" class="navbar-brand">Pathera Coaching</a>
+          </div>
+            
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#infinite">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#whatwedo">Über mich</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="#testimonials">Kalorienrechner</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#gallery">Galerie</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#kontakt">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="text-center tm-hero-text-container">
+        <div class="tm-hero-text-container-inner">
+          <hr style="background-color: #D7ba89; height:2px; width:25%;">
+          <h2 class="tm-hero-title" style="font-size: 35px;">P A T H E R A</h2>
+          <div style="text-align: center;">
+              <hr style="background-color: #D7ba89; height:2px; width:7.5%; display: inline-block; margin: 0 10px;">
+              <span style="color: white; font-family: 'Courier New', monospace; font-size: 15px;">Coaching</span>
+              <hr style="background-color: #D7ba89; height:2px; width:7.5%; display: inline-block; margin: 0 10px;">
+          </div>
+          <p class="tm-hero-subtitle">
+            Wetsh abneh?
+            <br>Ich zeig der wie!
+          </p>
+        </div>
+      </div>
+
+      <div class="tm-next tm-intro-next">
+        <a href="#whatwedo" class="text-center tm-down-arrow-link">
+          <i class="fas fa-2x fa-arrow-down tm-down-arrow" style="background-color: rgba(255, 255, 255, 0);"></i>
+        </a>
+      </div>
+    </section>
+
+    <section id="whatwedo" class="tm-section-pad-top">
+      
+      <div class="container">
+
+            <div class="row tm-content-box"><!-- first row -->
+                <div class="col-lg-12 col-xl-12">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4 tm-section-title" style="color:black">Über mich</h2>
+                        <p class="mb-4 tm-intro-text">
+                          Herzlich willkommen auf meiner Website! Mein Name ist Simone, und ich freue mich aufrichtig, dass du den ersten Schritt zu einer positiven Veränderung in deinem Leben gemacht hast. Lass mich dir ein wenig mehr über mich und meine Leidenschaft erzählen.</a>.</p>
+                    </div>
+                </div>
+
+            </div><!-- first row -->
+            
+            <div class="row tm-content-box"><!-- second row -->
+        		<div class="col-lg-1">
+                    <i class="fas fa-handshake fa-3x" style="color:black;"></i>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4" style="color:black;">Leidenschaftliches Coaching</h2>
+                        <p class="mb-4 tm-intro-text">
+                          Mit einer leidenschaftlichen Hingabe für Coaching, liegt mein Fokus darauf, dein individuelles Gesundheitsziel zu unterstützen und dir dabei zu helfen, das Beste aus dir selbst herauszuholen. Ich teile mein Wissen und meine Erfahrung gerne, um dich auf deinem Weg zum Erfolg zu begleiten</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-1">
+                    <i class="far fa-3x fa-comment-alt text-center tm-icon" style="color:black;"></i>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4" style="color:black">Schnelle Unterstützung</h2>
+                        <p class="mb-4 tm-intro-text">
+                          Ich biete WhatsApp-Coaching an und stehe immer für deine Fragen bereit, um dir beim Erreichen deiner Diätziele schnell zu helfen.</p>
+                    </div>
+                </div>
+
+            </div><!-- second row -->
+            
+            <div class="row tm-content-box"><!-- third row -->
+        		<div class="col-lg-1">
+                    <i class="fas fa-route fa-3x" style="color:black;"></i>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4" style="color:black">Mein Weg</h2>
+                        <p class="mb-4 tm-intro-text">
+                          In einer Phase, in der ich meine Ernährung vernachlässigte, traf ich die Entscheidung zur Veränderung. Mein Durst nach Wissen wuchs, und ich vertiefte mich in Bücher über Ernährung, was meine Leidenschaft für das Thema entfachte. Das Resultat? Eine Gewichtsabnahme von 15 Kilogramm und eine Steigerung meines Wohlbefindens.</p>
+                          
+                          <div class="tm-continue">
+                            <!--<a href="#testimonials" class="tm-intro-text tm-btn-primary">Learn More</a>-->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-1">
+                    <i class="fas fa-book fa-3x " style="color:black;"></i>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                      <h2 class="tm-text-primary mb-4" style="color:black">Gesundheit durch Wissen und Leidenschaft</h2>
+                        <p class="mb-4 tm-intro-text">
+                          Meine Philosophie ist geprägt von der Überzeugung, dass Wissen und Leidenschaft der Schlüssel zu Gesundheit und Wohlbefinden sind. Als Coach ist es meine Mission, Menschen dabei zu helfen, ihre Gesundheitsziele zu erreichen, indem ich mein Wissen und meine Leidenschaft für Ernährung und Fitness teile. Ich bin fest davon überzeugt, dass eine gesunde Ernährung und Diät einfach und für jeden zugänglich sein können. Ich bin hier, um anderen zu zeigen, wie sie diesen Weg beschreiten können
+                      </p>
+                          
+                          <div class="tm-continue">
+                            <!--<a href="#testimonials" class="tm-intro-text tm-btn-primary">Details</a>-->
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- third row -->
+
+        </div>
+      
+    </section>
+    
+    <section id="testimonials" class="tm-section-pad-top tm-parallax-2">
+      <div class="container tm-testimonials-content">
+        <div class="row">
+          <div class="col-lg-12 tm-content-box">
+            <h2 class="text-white text-center mb-4 tm-section-title">Kalorienrechner</h2>
+            <p class="mx-auto tm-section-desc text-center">
+              Deine Ernährungsgewohnheiten spielen eine entscheidende Rolle für dein Wohlbefinden. Nutze meinen Kalorienrechner, um herauszufinden, wie viele Kalorien du benötigst, um deine Ziele zu erreichen.
+              </p>
+            <div class="mx-auto tm-gallery-container tm-gallery-container-2">
+              <div class="tm-testimonials-carousel">
+                <div id="bmr-calculator" class="wrapper">
+                  <div class="calculator">
+                      <div class="choose-gender">
+                          <div class="segmented-control"><input id="calc-gender-male" type="radio" name="gender" value="male"
+                                  checked=""><label for="calc-gender-male">Male</label></div>
+                          <div class="segmented-control">
+                              <input id="calc-gender-female" type="radio" name="gender" value="female"><label
+                                  for="calc-gender-female">Female</label>
+                          </div>
+                      </div>
+                      <label for="calc-age" id="calc-age_value">Age: 25</label>
+                      <input id="calc-age" type="range" value="20" min="18" max="100">
+                      <label for="calc-height" id="calc-height_value">Height: 180cm</label>
+                      <input id="calc-height" type="range" value="180" min="120" max="220">
+                      <label for="calc-weight" id="calc-weight_value">Weight: 80kg</label>
+                      <input id="calc-weight" type="range" value="80" min="40" max="200">
+                      <label for="calc-walking" id="calc-walking_value">Walking: 2 hours per week</label>
+                      <input id="calc-walking" type="range" value="2" min="0" max="50">
+                      <label for="calc-cardio" id="calc-cardio_value">Cardio: 1 hour per week</label>
+                      <input id="calc-cardio" type="range" value="1" min="0" max="50">
+                  </div>
+                  <div class="results">
+                      <div id="calc-target-gain" style="color: black; font-weight: bold;">
+                          Zunehmen:<br>
+                          <span style="color:white">2700 Kalorien</span>
+                      </div>
+                      <div id="calc-target-maintain" style="color: black; font-weight: bold;">
+                          Halten:<br>
+                          <span style="color:white">2400 Kalorien</span>
+                      </div>
+                      <div id="calc-target-lose" style="color: black; font-weight: bold;">
+                          Abnehmen:<br>
+                          <span style="color:white">1900 Kalorien</span>
+                      </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tm-bg-overlay"></div>
+    </section>
+    
+    <section id="gallery" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4" style="color:black;">Galerie</h2>
+              <p class="mx-auto tm-section-desc">
+                Coming soon...
+              </p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="mx-auto tm-gallery-container">
+                      <!--
+                    <div class="grid tm-gallery">
+                      <a href="{{ url_for('static', filename='img/gallery-img-01.jpg') }}">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="{{ url_for('static', filename='img/gallery-img-01.jpg') }}" alt="Image 1" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Physical Health <span>Exercise!</span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="{{ url_for('static', filename='img/gallery-img-01.jpg') }}">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="{{ url_for('static', filename='img/gallery-img-01.jpg') }}" alt="Image 2" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Rain on Glass <span>Second Image</span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="{{ url_for('static', filename='img/gallery-img-01.jpg') }}">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="{{ url_for('static', filename='img/gallery-img-01.jpg') }}" alt="Image 3" class="img-fluid">
+                          <figcaption>
+                            <h2><i><span>Sea View</span> Mega City</i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="{{ url_for('static', filename='img/gallery-img-01.jpg') }}">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="{{ url_for('static', filename='img/gallery-img-01.jpg') }}" alt="Image 4" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Dream Girl <span>Thoughts</span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="{{ url_for('static', filename='img/gallery-img-01.jpg') }}">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="{{ url_for('static', filename='img/gallery-img-01.jpg') }}" alt="Image 5" class="img-fluid">
+                          <figcaption>
+                            <h2><i><span>Workstation</span> Offices</i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="{{ url_for('static', filename='img/gallery-img-01.jpg') }}">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="{{ url_for('static', filename='img/gallery-img-01.jpg') }}" alt="Image 6" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Just Above <span>The City</span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="{{ url_for('static', filename='img/gallery-img-01.jpg') }}">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="{{ url_for('static', filename='img/gallery-img-01.jpg') }}" alt="Image 7" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Another <span>Exercise Time</span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="{{ url_for('static', filename='img/gallery-img-01.jpg') }}">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="{{ url_for('static', filename='img/gallery-img-01.jpg') }}" alt="Image 8" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Repeated <span>Image Spot</span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                </div>
+                    -->
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="tm-section-pad-top tm-parallax-2">
+      <div class="container tm-container-contact">
+        <div class="row">
+          <div class="text-center col-12">
+            <h2 class="tm-section-title mb-4">Kontaktiere mich</h2>
+            <p class="mb-5">
+              Jetzt ist der perfekte Zeitpunkt, um deinen ersten Schritt auf dem Weg zu einem gesünderen und glücklicheren Lebensstil zu machen. Ich bin hier, um dich bei der Erreichung deiner Gesundheitsziele zu unterstützen und begleite dich auf diesem aufregenden Weg. Nutze das Kontaktformular unten, um den ersten Schritt zu machen. Gemeinsam werden wir dein volles Potenzial entfalten und deine Ziele erreichen. Worauf wartest du noch? Lass uns zusammenarbeiten, um deine Gesundheit und dein Wohlbefinden zu verbessern!
+            </p>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                </div>
+                <div class="col-sm">
+                  <div class="container">
+                    <label class="switch" for="switch"><input type="checkbox" id="switch"/>    <div></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-sm">
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <form action="/submit_form" method="POST" id="contactForm">
+              <input id="name" name="name" type="text" placeholder="Dein Name" class="tm-input" required style="align-content: center; background-color: rgba(255, 255, 255, 0.2);"/>
+              <input id="email" name="email" type="email" placeholder="Deine Email" class="tm-input" required style="background-color: rgba(255, 255, 255, 0.2);"/>
+              <textarea id="message" name="message" rows="8" placeholder="Nachricht" class="tm-input" required style="background-color: rgba(255, 255, 255, 0.2);"></textarea>
+              <button type="submit" class="btn tm-btn-submit" style="width:91%;">Senden</button>
+            </form>
+            </div>
+            <div class="contact-item">
+              <div class="contaus">
+                <a rel="nofollow" href="https://wa.me/41765336444" class="item-link">
+                <i class="fab fa-whatsapp fa-2x mr-4"></i>
+                <span class="mb-0">Whatsapp</span>
+                </a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contaus">
+                <a href="https://www.instagram.com/patheracoaching/" class="item-link">
+                  <i class="fab fa-instagram fa-2x mr-4"></i>
+                  <span class="mb-0">Instagram</span>
+                  </a>
+              </div>
+            </div>
+            <div class="contact-item">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="formreg">
+        <form action="/submit_registration" method="POST" id="registrationForm">
+          <!-- Persönliche Angaben -->
+          <hr>
+          <h5 style="font-weight: bold;">Persönliche Angaben</h5>
+          <br>
+          <p>
+            Hier gibst du deine grundlegenden persönlichen Informationen an, dazu gehören dein Name,
+            deine E-Mail-Adresse, dein Geschlecht, Alter, Größe und Gewicht.
+          </p>
+          <input type="text" id="vorname" name="vorname" placeholder="Vorname" class="tm-input" required />
+          <input type="text" id="nachname" name="nachname" placeholder="Nachname" class="tm-input" required />
+          <input id="emailreg" name="emailreg" type="email" placeholder="Deine Email" class="tm-input" required />
+          <select id="genderselect" name="genderselect" class="tm-input" required style="background-color: transparent;">
+            <option value="" style="display: none;">Geschlecht</option>
+            <option value="Weiblich">Weiblich</option>
+            <option value="Männlich">Männlich</option>
+          </select>
+          <input type="number" id="alter" name="alter" placeholder="Alter" class="tm-input" required min="18" max="100" />
+          <input type="number" id="groesse" name="groesse" placeholder="Grösse (cm)" class="tm-input" required min="130" max="230" />
+          <input type="number" id="gewicht" name="gewicht" placeholder="Aktuelles Gewicht (kg)" class="tm-input" required min="40" max="150" />
+          <!-- Lifestyle -->
+          <hr>
+          <h5 style="font-weight: bold;">Dein Lifestyle</h5>
+          <br>
+          <p>
+            In diesem Abschnitt beschreibst du deinen täglichen Lebensstil, einschließlich deines Berufs, deiner alltäglichen Bewegung und eines groben Tagesablaufs.
+          </p>
+          <label for="beruf">Beruf und Bewegung im Alltag:</label>
+          <textarea type="text" id="beruf" name="beruf" rows="8" class="tm-input" required></textarea>
+          <label for="tagesablauf">Grober Tagesablauf</label>
+          <textarea type="text" id="tagesablauf" name="tagesablauf" rows="8" class="tm-input" required></textarea>
+          <!-- Deine Ernährung -->
+          <hr>
+          <h5 style="font-weight: bold;">Deine Ernährung</h5>
+          <br>
+          <p>
+            Hier gibst du Einblicke in deine Ernährungsgewohnheiten, einschließlich deiner Vorlieben, dessen, was du derzeit isst, deines Essverhaltens, möglicher Nahrungsergänzungsmittel und eventueller Allergien oder Unverträglichkeiten.
+          </p>
+          <label for="wasessen">Was isst du gerne?</label>
+          <textarea type="text" id="wasessen" name="wasessen" rows="8" class="tm-input" required></textarea>
+          <label for="wasessenzeit">Was isst du zurzeit?</label>
+          <textarea type="text" id="wasessenzeit" name="wasessenzeit" rows="8" class="tm-input" required></textarea>
+          <select id="vielesseroderwenigesser" name="vielesseroderwenigesser" class="tm-input" required style="background-color: transparent;">
+            <option value="" style="display: none;">Essverhalten</option>
+            <option value="Vielesser">Vielesser</option>
+            <option value="Wenigesser">Wenigesser</option>
+          </select>
+          <br>
+          <label for="supps">Supplements</label><br>
+          <textarea type="text" id="supps" name="supps" rows="8" class="tm-input" required></textarea>
+          <label for="gewohnheitessen">Aktuelle Ernährungsgewohnheiten</label>
+          <textarea type="text" id="gewohnheitessen" name="gewohnheitessen" rows="8" class="tm-input" placeholder="Grobe Auflistung oder Beispiel" required></textarea>
+          <label for="allergie">Allergien/Unverträglichkeiten</label>
+          <textarea type="text" id="allergie" name="allergie" rows="8" class="tm-input" required></textarea>
+          <!-- Stoffwechsel -->
+          <hr>
+          <h5 style="font-weight: bold;">Dein Stoffwechsel</h5>
+          <br>
+          <p>
+            Hier wählst du deinen Stoffwechseltyp aus, der entweder "Nehme schnell zu" oder "Nehme schwer zu" sein kann.
+          </p>
+          <select id="abnehmenOderZunehmen" name="abnehmenOderZunehmen" class="tm-input" required style="background-color: transparent;">
+            <option value="" style="display: none;">Stoffwechseltyp</option>
+            <option value="Nehme schnell zu">Nehme schnell zu</option>
+            <option value="Nehme schwer zu">Nehme schwer zu</option>
+          </select>
+          <!-- Training -->
+          <hr>
+          <h5 style="font-weight: bold;">Dein Training</h5>
+          <br>
+          <p>
+            In diesem Abschnitt beschreibst du deine Trainingsroutine, einschließlich der Art des Sports, der Wochentage, an denen du trainierst, und der Dauer deiner Übungen.
+          </p>
+          <label for="trainingshaufigkeit">Trainingshäufigkeit (Sportart, Wochentage, Dauer)</label>
+          <textarea type="text" id="trainingshaufigkeit" name="trainingshaufigkeit" rows="8" class="tm-input" required></textarea>
+          <!-- Wohlbefinden -->
+          <hr>
+          <h5 style="font-weight: bold;">Wohlbefinden und Wünsche</h5>
+          <br>
+          <p>
+            Hier teilst du Informationen über dein aktuelles Wohlbefinden und eventuelle spezielle Wünsche oder Anmerkungen bezüglich deiner Gesundheit und Fitness mit.
+          </p>
+          <label for="wohlbefinden">Aktuelles Wohlbefinden</label>
+          <textarea type="text" id="wohlbefinden" name="wohlbefinden" rows="8" class="tm-input" required></textarea>
+          <label for="wunsche">Spezielle Wünsche oder Anmerkungen</label>
+          <textarea type="text" id="wunsche" name="wunsche" rows="8" class="tm-input" required></textarea>
+          <!-- Ziel -->
+          <hr>
+          <h5 style="font-weight: bold;">Ziel</h5>
+          <br>
+          <p>
+            In diesem Bereich beschreibst du dein persönliches Ziel in Bezug auf deine Gesundheit und Fitness. Du hast auch die Möglichkeit, optional ein Bild oder eine Darstellung deines Ziels hinzuzufügen.
+          </p>
+          <select id="zielart" name="zielart" class="tm-input" required style="background-color: transparent;">
+            <option value="" style="display: none;">Ziel</option>
+            <option value="Abnehmen">Abnehmen</option>
+            <option value="Zunehmen">Zunehmen</option>
+            <option value="Gewicht halten">Gewicht halten</option>
+          </select>
+          <label for="ziel">Dein Ziel und optional ein Bild deines Ziels</label>
+          <textarea type="text" id="ziel" name="ziel" rows="4" class="tm-input" required></textarea>
+          <br>
+          <!-- 
+          <label for="imageidol" >Bilder auswählen: </label>
+          <input type="file" id="imageidol" name="imageidol" accept="image/*" multiple required/><br>          
+          -->
+          <!-- Sonstiges -->
+          <br>
+          <label for="bemerkung">Sonstiges/Bemerkungen</label>
+          <textarea type="text" id="bemerkung" name="bemerkung" rows="8" class="tm-input" required></textarea>
+          <button type="submit" class="btn btn-block tm-btn-submit mx-auto" id="registrationSubmitButton">Senden</button>
+        </form>
+      </div>
+  </div>
+  <div class="col-sm-12 col-md-6"></div>
+    <div id="registrationForm2"></div>
+    <footer>
+      <hr class="border-top">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <p class="mb-3 text-left">Pathera Coaching</p>
+                  <a rel="nofollow" href="https://wa.me/41765336444" class="item-link text-left">
+                      <i class="fab fa-whatsapp fa-2x mr-4"></i>
+                      <span class="mb-0">+41 76 533 64 44</span>
+                  </a>
+                  <a href="https://www.instagram.com/patheracoaching/" class="item-link text-left">
+                      <i class="fab fa-instagram fa-2x mr-4"></i>
+                      <span class="mb-0">patheracoaching</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+  
+  
+    </section>
+
+    <script src="{{ url_for('static', filename='js/jquery-1.9.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/slick/slick.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.singlePageNav.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script>
+
+      function getOffSet(){
+        var _offset = 450;
+        var windowHeight = window.innerHeight;
+
+        if(windowHeight > 500) {
+          _offset = 400;
+        }
+        if(windowHeight > 680) {
+          _offset = 300
+        }
+        if(windowHeight > 830) {
+          _offset = 210;
+        }
+
+        return _offset;
+      }
+
+      function setParallaxPosition($doc, multiplier, $object){
+        var offset = getOffSet();
+        var from_top = $doc.scrollTop(),
+          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
+        $object.css({"background-position" : bg_css });
+      }
+
+      // Parallax function
+      // Adapted based on https://codepen.io/roborich/pen/wpAsm
+      var background_image_parallax = function($object, multiplier, forceSet){
+        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        // $object.css({"background-attatchment" : "fixed"});
+
+        if(forceSet) {
+          setParallaxPosition($doc, multiplier, $object);
+        } else {
+          $(window).scroll(function(){
+            setParallaxPosition($doc, multiplier, $object);
+          });
+        }
+      };
+
+      var background_image_parallax_2 = function($object, multiplier){
+        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        $object.css({"background-attachment" : "fixed"});
+        
+        $(window).scroll(function(){
+          if($(window).width() > 768) {
+            var firstTop = $object.offset().top,
+                pos = $(window).scrollTop(),
+                yPos = Math.round((multiplier * (firstTop - pos)) - 186);
+
+            var bg_css = 'center ' + yPos + 'px';
+
+            $object.css({"background-position" : bg_css });
+          } else {
+            $object.css({"background-position" : "center" });
+          }
+        });
+      };
+      
+      $(function(){
+        // Hero Section - Background Parallax
+        background_image_parallax($(".tm-parallax"), 0.30, false);
+        background_image_parallax_2($("#contact"), 0.80);
+        background_image_parallax_2($("#testimonials"), 0.80);
+        
+        // Handle window resize
+        window.addEventListener('resize', function(){
+          background_image_parallax($(".tm-parallax"), 0.30, true);
+        }, true);
+
+        // Detect window scroll and update navbar
+        $(window).scroll(function(e){
+          if($(document).scrollTop() > 120) {
+            $('.tm-navbar').addClass("scroll");
+          } else {
+            $('.tm-navbar').removeClass("scroll");
+          }
+        });
+        
+        // Close mobile menu after click
+        $('#tmNav a').on('click', function(){
+          $('.navbar-collapse').removeClass('show');
+        })
+
+        // Scroll to corresponding section with animation
+        $('#tmNav').singlePageNav({
+          'easing': 'easeInOutExpo',
+          'speed': 600
+        });
+        
+        // Add smooth scrolling to all links
+        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, 'easeInOutExpo', function(){
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+
+        // Pop up
+        $('.tm-gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          gallery: { enabled: true }
+        });
+
+        $('.tm-testimonials-carousel').slick({
+          dots: true,
+          prevArrow: false,
+          nextArrow: false,
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                  slidesToShow: 1
+              }
+            }
+          ]
+        });
+
+        // Gallery
+        $('.tm-gallery').slick({
+          dots: true,
+          infinite: false,
+          slidesToShow: 5,
+          slidesToScroll: 2,
+          responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+        });
+      });
+      
+      const switchElement = document.getElementById("switch");
+    const contactForm = document.getElementById("contactForm");
+    const registrationForm = document.getElementById("registrationForm");
+    const registrationForm2 = document.getElementById("registrationForm2");
+
+    // Kontaktinformationen standardmäßig anzeigen
+    contactForm.style.display = "block";
+    
+    // Formular standardmäßig ausblenden
+    registrationForm.style.display = "none";
+    registrationForm2.style.display = "none";
+
+    switchElement.addEventListener("change", function () {
+      if (switchElement.checked) {
+        contactForm.style.display = "none";
+        registrationForm.style.display = "block";
+        registrationForm2.style.display = "block";
+        // Kontaktinformationen ausblenden
+        document.querySelectorAll(".contaus").forEach(function (item) {
+          item.style.display = "none";
+        });
+      } else {
+        contactForm.style.display = "block";
+        registrationForm.style.display = "none";
+        registrationForm2.style.display = "none";
+        // Kontaktinformationen einblenden
+        document.querySelectorAll(".contaus").forEach(function (item) {
+          item.style.display = "block";
+        });
+      }
+    });
+
+    document.getElementById("registrationSubmitButton").addEventListener("click", function() {
+    document.getElementById("registrationForm").submit();
+    });
+
+    document.getElementById("closeButton").addEventListener("click", function () {
+            window.location.href = "{{ url_for('index') }}";
+        });
+    </script>
+  </body>
+</html>
