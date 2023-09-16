@@ -155,7 +155,14 @@
       <div class="container tm-testimonials-content">
         <div class="row">
           <div class="col-lg-12 tm-content-box">
-            <h2 class="text-white text-center mb-4 tm-section-title">Kalorienrechner</h2>
+            <div class="lebensmittelswitch" style="text-align: center;">
+              <label class="switch" for="toggleButton">
+                <input type="checkbox" id="toggleButton"/>
+                <div></div>
+              </label>
+            </div>
+            <div class="kalorienrechner">
+              <h2 class="text-white text-center mb-4 tm-section-title">Kalorienrechner</h2>
             <p class="mx-auto tm-section-desc text-center">
               Deine Ernährungsgewohnheiten spielen eine entscheidende Rolle für dein Wohlbefinden. Nutze meinen Kalorienrechner, um herauszufinden, wie viele Kalorien du benötigst, um deine Ziele zu erreichen.
               </p>
@@ -199,6 +206,11 @@
               </div>
               </div>
             </div>
+            </div>
+            <div class="Lebensmittelrechner" style="display: none;">
+              <p>test</p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -714,6 +726,25 @@
     document.getElementById("registrationSubmitButton").addEventListener("click", function() {
     document.getElementById("registrationForm").submit();
     });
+    // Hinzufügen eines Event Listeners zum Button
+    document.getElementById("toggleButton").addEventListener("click", function () {
+      var kalorienrechner = document.querySelector(".kalorienrechner");
+      var lebensmittelrechner = document.querySelector(".Lebensmittelrechner");
+
+      // Überprüfen, ob der Kalorienrechner sichtbar ist
+      if (kalorienrechner.style.display !== "none") {
+        // Kalorienrechner ausblenden
+        kalorienrechner.style.display = "none";
+        // Lebensmittelrechner anzeigen
+        lebensmittelrechner.style.display = "block";
+      } else {
+        // Kalorienrechner anzeigen
+        kalorienrechner.style.display = "block";
+        // Lebensmittelrechner ausblenden
+        lebensmittelrechner.style.display = "none";
+      }
+    });
+
     </script>
   </body>
 </html>
