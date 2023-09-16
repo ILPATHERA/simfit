@@ -72,7 +72,7 @@ blockquote {
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
   color: white;
-  background-color: #38B;
+  background-color: #D4AF37;
 }
 
 /* Navbar */
@@ -549,7 +549,7 @@ figure.effect-honey:hover h2 i {
 
 .item-link:hover i,
 .item-link:hover span {
-  color: #D7ba89;
+  color: #D4AF37;
 }
 
 .tm-input {
@@ -572,7 +572,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-btn-submit:hover {
 	color: #fff;
-	background-color: #38B;
+	background-color: #D4AF37;
 }
 
 ::placeholder {
@@ -613,7 +613,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-footer-link:hover,
 .tm-footer-link:focus {
-  color: #38B;
+  color: #D7ba89;
   text-decoration: none;
 }
 
@@ -923,7 +923,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #D7ba89;
+  box-shadow: 0 0 1px #D4AF37;
 }
 
 input:checked + .slider:before {
@@ -1091,7 +1091,7 @@ select#zielart option {
 
 .formreg .tm-btn-submit:hover {
   color: #fff;
-  background-color: #D7ba89;
+  background-color: #D4AF37;
 }
 
 .formreg p {
