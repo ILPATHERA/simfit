@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-  <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,6 +11,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='magnific-popup/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/tooplate-infinite-loop.css') }}">
+    
     
 
   </head>
@@ -29,8 +28,7 @@
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
         <div class="container">
           <div class="tm-next">
-            <a href="#infinite" class="navbar-brand">Pathera Coaching</a>
-            
+              <a href="#infinite" class="navbar-brand">Pathera Coaching</a>
           </div>
             
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,7 +96,7 @@
             
             <div class="row tm-content-box"><!-- second row -->
         		<div class="col-lg-1">
-                    <i class="far fa-3x fa-chart-bar text-center tm-icon" style="color:black;"></i>
+                    <i class="fas fa-handshake fa-3x" style="color:black;"></i>
                 </div>
                 <div class="col-lg-5">
                     <div class="tm-intro-text-container">
@@ -123,7 +121,7 @@
             
             <div class="row tm-content-box"><!-- third row -->
         		<div class="col-lg-1">
-                    <i class="fas fa-3x fa-fingerprint text-center tm-icon" style="color:black;"></i>
+                    <i class="fas fa-route fa-3x" style="color:black;"></i>
                 </div>
                 <div class="col-lg-5">
                     <div class="tm-intro-text-container">
@@ -132,13 +130,13 @@
                           In einer Phase, in der ich meine Ernährung vernachlässigte, traf ich die Entscheidung zur Veränderung. Mein Durst nach Wissen wuchs, und ich vertiefte mich in Bücher über Ernährung, was meine Leidenschaft für das Thema entfachte. Das Resultat? Eine Gewichtsabnahme von 15 Kilogramm und eine Steigerung meines Wohlbefindens.</p>
                           
                           <div class="tm-continue">
-                            <a href="#testimonials" class="tm-intro-text tm-btn-primary">Learn More</a>
+                            <!--<a href="#testimonials" class="tm-intro-text tm-btn-primary">Learn More</a>-->
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-lg-1">
-                    <i class="fas fa-3x fa-users text-center tm-icon" style="color:black;"></i>
+                    <i class="fas fa-book fa-3x " style="color:black;"></i>
                 </div>
                 <div class="col-lg-5">
                     <div class="tm-intro-text-container">
@@ -148,7 +146,7 @@
                       </p>
                           
                           <div class="tm-continue">
-                            <a href="#testimonials" class="tm-intro-text tm-btn-primary">Details</a>
+                            <!--<a href="#testimonials" class="tm-intro-text tm-btn-primary">Details</a>-->
                         </div>
                     </div>
                 </div>
@@ -191,17 +189,17 @@
                       <input id="calc-cardio" type="range" value="1" min="0" max="50">
                   </div>
                   <div class="results">
-                      <div id="calc-target-gain">
-                          To Gain Weight:<br>
-                          <span style="color:white">2700 calories</span>
+                      <div id="calc-target-gain" style="color: black; font-weight: bold;">
+                          Zunehmen:<br>
+                          <span style="color:white">2700 Kalorien</span>
                       </div>
-                      <div id="calc-target-maintain">
-                          To Maintain:<br>
-                          <span style="color:white">2400 calories</span>
+                      <div id="calc-target-maintain" style="color: black; font-weight: bold;">
+                          Halten:<br>
+                          <span style="color:white">2400 Kalorien</span>
                       </div>
-                      <div id="calc-target-lose">
-                          To Lose Weight:<br>
-                          <span style="color:white">1900 calories</span>
+                      <div id="calc-target-lose" style="color: black; font-weight: bold;">
+                          Abnehmen:<br>
+                          <span style="color:white">1900 Kalorien</span>
                       </div>
                   </div>
               </div>
@@ -217,15 +215,16 @@
       <div class="container tm-container-gallery">
         <div class="row">
           <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4" style="color:black;">Gallery</h2>
+              <h2 class="tm-text-primary tm-section-title mb-4" style="color:black;">Galerie</h2>
               <p class="mx-auto tm-section-desc">
-                Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus lacinia, sed iaculis nibh semper. Pellentesque est urna, lobortis eu arcu a, aliquet tristique urna.
+                Coming soon...
               </p>
           </div>
         </div>
         <div class="row">
             <div class="col-12">
                 <div class="mx-auto tm-gallery-container">
+                      <!--
                     <div class="grid tm-gallery">
                       <a href="{{ url_for('static', filename='img/gallery-img-01.jpg') }}">
                         <figure class="effect-honey tm-gallery-item">
@@ -293,107 +292,208 @@
                       </a>
                     </div>
                 </div>
+                    -->
             </div>
           </div>
       </div>
     </section>
-
     <!-- Contact -->
     <section id="contact" class="tm-section-pad-top tm-parallax-2">
-    
       <div class="container tm-container-contact">
-        
         <div class="row">
-            
-            <div class="text-center col-12">
-                <h2 class="tm-section-title mb-4">Kontaktiere mich</h2>
-                <p class="mb-5">
-                  Jetzt ist der perfekte Zeitpunkt, um deinen ersten Schritt auf dem Weg zu einem gesünderen und glücklicheren Lebensstil zu machen. Ich bin hier, um dich bei der Erreichung deiner Gesundheitsziele zu unterstützen und begleite dich auf diesem aufregenden Weg. Nutze das Kontaktformular unten, um den ersten Schritt zu machen. Gemeinsam werden wir dein volles Potenzial entfalten und deine Ziele erreichen. Worauf wartest du noch? Lass uns zusammenarbeiten, um deine Gesundheit und dein Wohlbefinden zu verbessern!
-                </p><br>
-            </div>
-            
-            <div class="col-sm-12 col-md-6">
-              <form action="/submit_form" method="POST">
-                <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input" required />
-                <input id="email" name="email" type="email" placeholder="Your Email" class="tm-input" required />
-                <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input" required></textarea>                
-                <button type="submit" class="btn tm-btn-submit">Submit</button>
-              </form>
-              <!-- Erfolg Modal -->
-              <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="successModalLabel">Erfolg</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body" id="successMessage">
-                      Nachricht gesendet!
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
-                    </div>
+          <div class="text-center col-12">
+            <h2 class="tm-section-title mb-4">Kontaktiere mich</h2>
+            <p class="mb-5">
+              Jetzt ist der perfekte Zeitpunkt, um deinen ersten Schritt auf dem Weg zu einem gesünderen und glücklicheren Lebensstil zu machen. Ich bin hier, um dich bei der Erreichung deiner Gesundheitsziele zu unterstützen und begleite dich auf diesem aufregenden Weg. Nutze das Kontaktformular unten, um den ersten Schritt zu machen. Gemeinsam werden wir dein volles Potenzial entfalten und deine Ziele erreichen. Worauf wartest du noch? Lass uns zusammenarbeiten, um deine Gesundheit und dein Wohlbefinden zu verbessern!
+            </p>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                </div>
+                <div class="col-sm">
+                  <div class="container">
+                    <label class="switch" for="switch"><input type="checkbox" id="switch"/>    <div></div>
+                    </label>
                   </div>
                 </div>
-              </div>
-
-              <!-- Fehler Modal -->
-              <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="errorModalLabel">Fehler</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body" id="errorMessage">
-                      Fehler beim Senden der Nachricht
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
-                    </div>
-                  </div>
+                <div class="col-sm">
                 </div>
               </div>
             </div>
-            
-            <div class="col-sm-12 col-md-6">
-
-                <div class="contact-item">
-                  <a rel="nofollow" href="https://api.whatsapp.com/send?phone=0765336444" class="item-link">
-                      <i class="far fa-2x fa-comment mr-4"></i>
-                      <span class="mb-0">Whatsapp</span>
-                  </a>
-                </div>
-                               
-                <div class="contact-item">
-                  <a rel="nofollow" href="tel:0100200340" class="item-link">
-                      <i class="fas fa-2x fa-phone-square mr-4"></i>
-                      <span class="mb-0">Instagram</span>
-                  </a>
-                </div>
-                
-                <div class="contact-item">&nbsp;</div>
-            
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <form action="/submit_form" method="POST" id="contactForm">
+              <input id="name" name="name" type="text" placeholder="Dein Name" class="tm-input" required style="align-content: center; background-color: rgba(255, 255, 255, 0.2);"/>
+              <input id="email" name="email" type="email" placeholder="Deine Email" class="tm-input" required style="background-color: rgba(255, 255, 255, 0.2);"/>
+              <textarea id="message" name="message" rows="8" placeholder="Nachricht" class="tm-input" required style="background-color: rgba(255, 255, 255, 0.2);"></textarea>
+              <button type="submit" class="btn tm-btn-submit" style="width:91%;">Senden</button>
+            </form>
             </div>
-            
-            
-        </div><!-- row ending -->
-        
+            <div class="contact-item">
+              <div class="contaus">
+                <a rel="nofollow" href="https://wa.me/41765336444" class="item-link">
+                <i class="fab fa-whatsapp fa-2x mr-4"></i>
+                <span class="mb-0">Whatsapp</span>
+                </a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contaus">
+                <a href="https://www.instagram.com/patheracoaching/" class="item-link">
+                  <i class="fab fa-instagram fa-2x mr-4"></i>
+                  <span class="mb-0">Instagram</span>
+                  </a>
+              </div>
+            </div>
+            <div class="contact-item">&nbsp;</div>
+          </div>
+        </div>
       </div>
 
-      	<footer class="text-center small tm-footer">
-          <p class="mb-0">
-          
-          
-          <a rel="nofollow" href="https://www.tooplate.com" title="HTML templates"></a></p>
-        </footer>
-
+      <div class="formreg">
+        <form action="/submit_registration" method="POST" id="registrationForm">
+          <!-- Persönliche Angaben -->
+          <hr>
+          <h5 style="font-weight: bold;">Persönliche Angaben</h5>
+          <br>
+          <p>
+            Hier gibst du deine grundlegenden persönlichen Informationen an, dazu gehören dein Name,
+            deine E-Mail-Adresse, dein Geschlecht, Alter, Größe und Gewicht.
+          </p>
+          <input type="text" id="vorname" name="vorname" placeholder="Vorname" class="tm-input" required />
+          <input type="text" id="nachname" name="nachname" placeholder="Nachname" class="tm-input" required />
+          <input id="emailreg" name="emailreg" type="email" placeholder="Deine Email" class="tm-input" required />
+          <select id="genderselect" name="genderselect" class="tm-input" required style="background-color: transparent;">
+            <option value="" style="display: none;">Geschlecht</option>
+            <option value="Weiblich">Weiblich</option>
+            <option value="Männlich">Männlich</option>
+          </select>
+          <input type="number" id="alter" name="alter" placeholder="Alter" class="tm-input" required min="18" max="100" />
+          <input type="number" id="groesse" name="groesse" placeholder="Grösse (cm)" class="tm-input" required min="130" max="230" />
+          <input type="number" id="gewicht" name="gewicht" placeholder="Aktuelles Gewicht (kg)" class="tm-input" required min="40" max="150" />
+          <!-- Lifestyle -->
+          <hr>
+          <h5 style="font-weight: bold;">Dein Lifestyle</h5>
+          <br>
+          <p>
+            In diesem Abschnitt beschreibst du deinen täglichen Lebensstil, einschließlich deines Berufs, deiner alltäglichen Bewegung und eines groben Tagesablaufs.
+          </p>
+          <label for="beruf">Beruf und Bewegung im Alltag:</label>
+          <textarea type="text" id="beruf" name="beruf" rows="8" class="tm-input" required></textarea>
+          <label for="tagesablauf">Grober Tagesablauf</label>
+          <textarea type="text" id="tagesablauf" name="tagesablauf" rows="8" class="tm-input" required></textarea>
+          <!-- Deine Ernährung -->
+          <hr>
+          <h5 style="font-weight: bold;">Deine Ernährung</h5>
+          <br>
+          <p>
+            Hier gibst du Einblicke in deine Ernährungsgewohnheiten, einschließlich deiner Vorlieben, dessen, was du derzeit isst, deines Essverhaltens, möglicher Nahrungsergänzungsmittel und eventueller Allergien oder Unverträglichkeiten.
+          </p>
+          <label for="wasessen">Was isst du gerne?</label>
+          <textarea type="text" id="wasessen" name="wasessen" rows="8" class="tm-input" required></textarea>
+          <label for="wasessenzeit">Was isst du zurzeit?</label>
+          <textarea type="text" id="wasessenzeit" name="wasessenzeit" rows="8" class="tm-input" required></textarea>
+          <select id="vielesseroderwenigesser" name="vielesseroderwenigesser" class="tm-input" required style="background-color: transparent;">
+            <option value="" style="display: none;">Essverhalten</option>
+            <option value="Vielesser">Vielesser</option>
+            <option value="Wenigesser">Wenigesser</option>
+          </select>
+          <br>
+          <label for="supps">Supplements</label><br>
+          <textarea type="text" id="supps" name="supps" rows="8" class="tm-input" required></textarea>
+          <label for="gewohnheitessen">Aktuelle Ernährungsgewohnheiten</label>
+          <textarea type="text" id="gewohnheitessen" name="gewohnheitessen" rows="8" class="tm-input" placeholder="Grobe Auflistung oder Beispiel" required></textarea>
+          <label for="allergie">Allergien/Unverträglichkeiten</label>
+          <textarea type="text" id="allergie" name="allergie" rows="8" class="tm-input" required></textarea>
+          <!-- Stoffwechsel -->
+          <hr>
+          <h5 style="font-weight: bold;">Dein Stoffwechsel</h5>
+          <br>
+          <p>
+            Hier wählst du deinen Stoffwechseltyp aus, der entweder "Nehme schnell zu" oder "Nehme schwer zu" sein kann.
+          </p>
+          <select id="abnehmenOderZunehmen" name="abnehmenOderZunehmen" class="tm-input" required style="background-color: transparent;">
+            <option value="" style="display: none;">Stoffwechseltyp</option>
+            <option value="Nehme schnell zu">Nehme schnell zu</option>
+            <option value="Nehme schwer zu">Nehme schwer zu</option>
+          </select>
+          <!-- Training -->
+          <hr>
+          <h5 style="font-weight: bold;">Dein Training</h5>
+          <br>
+          <p>
+            In diesem Abschnitt beschreibst du deine Trainingsroutine, einschließlich der Art des Sports, der Wochentage, an denen du trainierst, und der Dauer deiner Übungen.
+          </p>
+          <label for="trainingshaufigkeit">Trainingshäufigkeit (Sportart, Wochentage, Dauer)</label>
+          <textarea type="text" id="trainingshaufigkeit" name="trainingshaufigkeit" rows="8" class="tm-input" required></textarea>
+          <!-- Wohlbefinden -->
+          <hr>
+          <h5 style="font-weight: bold;">Wohlbefinden und Wünsche</h5>
+          <br>
+          <p>
+            Hier teilst du Informationen über dein aktuelles Wohlbefinden und eventuelle spezielle Wünsche oder Anmerkungen bezüglich deiner Gesundheit und Fitness mit.
+          </p>
+          <label for="wohlbefinden">Aktuelles Wohlbefinden</label>
+          <textarea type="text" id="wohlbefinden" name="wohlbefinden" rows="8" class="tm-input" required></textarea>
+          <label for="wunsche">Spezielle Wünsche oder Anmerkungen</label>
+          <textarea type="text" id="wunsche" name="wunsche" rows="8" class="tm-input" required></textarea>
+          <!-- Ziel -->
+          <hr>
+          <h5 style="font-weight: bold;">Ziel</h5>
+          <br>
+          <p>
+            In diesem Bereich beschreibst du dein persönliches Ziel in Bezug auf deine Gesundheit und Fitness. Du hast auch die Möglichkeit, optional ein Bild oder eine Darstellung deines Ziels hinzuzufügen.
+          </p>
+          <select id="zielart" name="zielart" class="tm-input" required style="background-color: transparent;">
+            <option value="" style="display: none;">Ziel</option>
+            <option value="Abnehmen">Abnehmen</option>
+            <option value="Zunehmen">Zunehmen</option>
+            <option value="Gewicht halten">Gewicht halten</option>
+          </select>
+          <label for="ziel">Dein Ziel und optional ein Bild deines Ziels</label>
+          <textarea type="text" id="ziel" name="ziel" rows="4" class="tm-input" required></textarea>
+          <br>
+          <!-- 
+          <label for="imageidol" >Bilder auswählen: </label>
+          <input type="file" id="imageidol" name="imageidol" accept="image/*" multiple required/><br>          
+          -->
+          <!-- Sonstiges -->
+          <br>
+          <label for="bemerkung">Sonstiges/Bemerkungen</label>
+          <textarea type="text" id="bemerkung" name="bemerkung" rows="8" class="tm-input" required></textarea>
+          <button type="submit" class="btn btn-block tm-btn-submit mx-auto" id="registrationSubmitButton">Senden</button>
+        </form>
+      </div>
+  </div>
+  <div class="col-sm-12 col-md-6"></div>
+    <div id="registrationForm2"></div>
+    <footer>
+      <hr class="border-top">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <p class="mb-3 text-left">Pathera Coaching</p>
+                  <a rel="nofollow" href="https://wa.me/41765336444" class="item-link text-left">
+                      <i class="fab fa-whatsapp fa-2x mr-4"></i>
+                      <span class="mb-0">+41 76 533 64 44</span>
+                  </a>
+                  <a href="https://www.instagram.com/patheracoaching/" class="item-link text-left">
+                      <i class="fab fa-instagram fa-2x mr-4"></i>
+                      <span class="mb-0">patheracoaching</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+  
+  
     </section>
-    
+
     <script src="{{ url_for('static', filename='js/jquery-1.9.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/slick/slick.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
@@ -584,8 +684,44 @@
         ]
         });
       });
+      
+      const switchElement = document.getElementById("switch");
+    const contactForm = document.getElementById("contactForm");
+    const registrationForm = document.getElementById("registrationForm");
+    const registrationForm2 = document.getElementById("registrationForm2");
+
+    // Kontaktinformationen standardmäßig anzeigen
+    contactForm.style.display = "block";
     
-      document.getElementById("closeButton").addEventListener("click", function () {
+    // Formular standardmäßig ausblenden
+    registrationForm.style.display = "none";
+    registrationForm2.style.display = "none";
+
+    switchElement.addEventListener("change", function () {
+      if (switchElement.checked) {
+        contactForm.style.display = "none";
+        registrationForm.style.display = "block";
+        registrationForm2.style.display = "block";
+        // Kontaktinformationen ausblenden
+        document.querySelectorAll(".contaus").forEach(function (item) {
+          item.style.display = "none";
+        });
+      } else {
+        contactForm.style.display = "block";
+        registrationForm.style.display = "none";
+        registrationForm2.style.display = "none";
+        // Kontaktinformationen einblenden
+        document.querySelectorAll(".contaus").forEach(function (item) {
+          item.style.display = "block";
+        });
+      }
+    });
+
+    document.getElementById("registrationSubmitButton").addEventListener("click", function() {
+    document.getElementById("registrationForm").submit();
+    });
+
+    document.getElementById("closeButton").addEventListener("click", function () {
             window.location.href = "{{ url_for('index') }}";
         });
     </script>
