@@ -1103,7 +1103,7 @@ select#zielart option {
 
 .box {
 
-  width:31%;
+  width:50%;
   display:inline-block;
   margin:11px 0;
   border-radius:6px;
@@ -1128,3 +1128,17 @@ input[type="number"] {
 input[type="text"] {
   background-color: rgba(255, 255, 255, 0.05);
 }
+
+/* Media Query für Mobilgeräte (z. B. Smartphones) */
+@media screen and (max-width: 768px) {
+  .box {
+    width: 100%; /* Auf Mobilgeräten volle Breite für jede Box */
+    margin: 10px 0; /* Kleinerer Abstand zwischen den Boxen */
+  }
+
+  #container {
+    white-space: normal; /* Verhindert das Überlaufen von Text auf Mobilgeräten */
+    text-align: left; /* Linksbündige Textausrichtung */
+  }
+
+  

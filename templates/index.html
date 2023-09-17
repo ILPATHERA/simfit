@@ -274,7 +274,7 @@
                   <br>
                   <input type="hidden" id="meinPlatzhalter" value="Dies ist ein unsichtbarer Platzhalter" class="tm-input">
                   <br>
-                  <div style="background-color: rgba(255, 255, 255, 0.4);margin-left: 310px; margin-right: 310px;">
+                  <div style="background-color: rgba(255, 255, 255, 0.4);">
                     <br>
                     <h5 class="text-black text-center" style="color:black; font-weight: bold;">Resultat</h5>
                     <button id="calculateButton">Berechnen</button>
@@ -836,12 +836,22 @@
     const lebensmittel1 = document.getElementById("lebensmittelplan").value;
     const lebensmittel2 = document.getElementById("Lebensmittelalternative").value;
 
-    // Calculate the amount of Lebensmittel 2 needed to match kcal1
-    const amount2 = (kcal1 / kcal2) * 100; // Assuming the input is per 100g
+    // Check if any of the input fields are empty
+    if (
+        isNaN(kcal1) || isNaN(carbs1) || isNaN(protein1) || isNaN(fat1) ||
+        isNaN(kcal2) || isNaN(carbs2) || isNaN(protein2) || isNaN(fat2) || isNaN(kcal3)
+    ) {
+        // Display a message asking the user to fill in all values
+        document.getElementById("result").innerHTML = "Bitte fülle alle Werte aus.";
+    } else {
+        // Calculate the amount of Lebensmittel 2 needed to match kcal1
+        const amount2 = (kcal1 / kcal2) * 100; // Assuming the input is per 100g
 
-    // Display the result
-    document.getElementById("result").innerHTML = `Du benötigst ${amount2.toFixed(2)}g ${lebensmittel2}, um die gleichen Kalorien wie ${lebensmittel1} (${kcal1} kcal) zu haben, basierend auf den Angaben pro 100g.`;
+        // Display the result
+        document.getElementById("result").innerHTML = `Du benötigst ${amount2.toFixed(2)}g ${lebensmittel2}, um die gleichen Kalorien wie ${lebensmittel1} (${kcal1} kcal) zu haben, basierend auf den Angaben pro 100g.`;
+    }
 });
+
 
 
     </script>
