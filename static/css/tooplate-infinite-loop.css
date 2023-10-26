@@ -1142,4 +1142,11 @@ input[type="text"] {
   }
 
   /*FAQ*/
-  
+
+faq {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
