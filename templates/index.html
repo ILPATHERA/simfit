@@ -24,6 +24,7 @@
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
         <div class="container">
           <div class="tm-next">
+              <!-- <img src="{{ url_for('static', filename='logorandlos.png') }}" alt="Logo" class="img-fluid" style="width: 5%; height: auto;"> -->
               <a href="#infinite" class="navbar-brand">Pathera Coaching</a>
           </div>
             
@@ -54,13 +55,14 @@
       
       <div class="text-center tm-hero-text-container">
         <div class="tm-hero-text-container-inner">
-          <hr style="background-color: #D7ba89; height:2px; width:25%;">
-          <h2 class="tm-hero-title" style="font-size: 35px;">P A T H E R A</h2>
+          <!-- <hr style="background-color: #D7ba89; height:2px; width:25%;"> -->
+          <img src="{{ url_for('static', filename='logo_pathera.png') }}" alt="Logo" class="img-fluid" style="width: 35%; height: auto;">
+          <!-- <h2 class="tm-hero-title" style="font-size: 35px;">P A T H E R A</h2>
           <div style="text-align: center;">
               <hr style="background-color: #D7ba89; height:2px; width:7.5%; display: inline-block; margin: 0 10px;">
               <span style="color: white; font-family: 'Courier New', monospace; font-size: 15px;">Coaching</span>
               <hr style="background-color: #D7ba89; height:2px; width:7.5%; display: inline-block; margin: 0 10px;">
-          </div>
+          </div> -->
           <p class="tm-hero-subtitle">
             Wetsh abneh?
             <br>Ich zeig der wie!
@@ -518,7 +520,7 @@
           <h5 style="font-weight: bold;">Dein Training</h5>
           <br>
           <p>
-            In diesem Abschnitt beschreibst du deine Trainingsroutine, einschließlich der Art des Sports, der Wochentage, an denen du trainierst, und der Dauer deiner Übungen.
+            In diesem Abschnitt beschreibst du deine Trainingsroutine, welchen Sport, die Wochentage, an denen du trainierst, und der Dauer deiner Übungen.
           </p>
           <label for="trainingshaufigkeit">Trainingshäufigkeit (Sportart, Wochentage, Dauer)</label>
           <textarea type="text" id="trainingshaufigkeit" name="trainingshaufigkeit" rows="8" class="tm-input" required></textarea>
@@ -527,7 +529,7 @@
           <h5 style="font-weight: bold;">Wohlbefinden und Wünsche</h5>
           <br>
           <p>
-            Hier teilst du Informationen über dein aktuelles Wohlbefinden und eventuelle spezielle Wünsche oder Anmerkungen bezüglich deiner Gesundheit und Fitness mit.
+            Hier teilst du Informationen über dein aktuelles Wohlbefinden und eventuelle Wünsche oder Anmerkungen bezüglich deiner Fitness mit.
           </p>
           <label for="wohlbefinden">Aktuelles Wohlbefinden</label>
           <textarea type="text" id="wohlbefinden" name="wohlbefinden" rows="8" class="tm-input" required></textarea>
@@ -572,7 +574,7 @@
           <div class="row">
             <div class="col-lg-12 tm-content-box">
               <div class="faq">
-                <h2 class="text-black text-center mb-4 tm-section-title">FAQ</h2>
+                <h2 class="text-black text-center mb-4 tm-section-title" style="color:black;">FAQ</h2>
                 <p class="mx-auto tm-section-desc text-center">
                 Häufig gestellte Fragen
                 </p>
@@ -606,7 +608,7 @@
                         <i class="fa fa-arrow-down"></i>
                         <br>
                         <a href="#testimonials" style="color:#D7ba89;">Zum Kalorienrechner</a>
-
+                        <br>
                       </div>
                     </div>
                   </div>
@@ -652,14 +654,16 @@
       <div class="container">
           <div class="row justify-content-between"> <!-- Verteilt den Inhalt zwischen den Rändern -->
               <div class="col-lg-6 text-left"> <!-- Linker Bereich -->
-                  <p class="mb-3" style="color: black">Pathera Coaching</p>
+                  <!-- <p class="mb-3" style="color: black">Pathera Coaching</p> -->
+                  <img src="{{ url_for('static', filename='favicon.png') }}" alt="Logo" class="icon-image" style="width:6%; height:auto; margin-right: 15px;">
+                  <span class="mb-0" style="color:black">Pathera Coaching</span>
                   <a rel="nofollow" href="https://wa.me/41765336444" class="item-link">
-                      <i class="fab fa-whatsapp fa-2x mr-4"></i>
-                      <span class="mb-0">+41 76 533 64 44</span>
+                      <i class="fab fa-whatsapp fa-2x mr-4" style="color:black"></i>
+                      <span class="mb-0" style="color:black">+41 76 533 64 44</span>
                   </a>
                   <a href="https://www.instagram.com/patheracoaching/" class="item-link">
-                      <i class="fab fa-instagram fa-2x mr-4"></i>
-                      <span class="mb-0">patheracoaching</span>
+                      <i class="fab fa-instagram fa-2x mr-4" style="color:black"></i>
+                      <span class="mb-0" style="color:black">patheracoaching</span>
                   </a>
                   <br>
               </div>
