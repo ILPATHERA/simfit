@@ -1150,10 +1150,18 @@ faq {
   padding: 0 20px;
 }
 
-@media (max-width: 1290px) {
+@media screen and (max-width: 767px) {
   /* Stile nur für Geräte mit einer Bildschirmbreite von 768 Pixeln oder weniger */
   img {
       max-width: 100%;
+      height: auto;
   }
 }
-
+@media screen and (min-width: 768px) {
+  /* Stile nur für Geräte mit einer Bildschirmbreite von 768 Pixeln oder mehr */
+  img {
+      max-width: 10%;
+      height: auto;
+  }
+}
+}
