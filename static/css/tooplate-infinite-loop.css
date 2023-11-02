@@ -1150,7 +1150,7 @@ faq {
   padding: 0 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1290px) {
   /* Stile nur für Geräte mit einer Bildschirmbreite von 768 Pixeln oder weniger */
   img {
       max-width: 100%;
