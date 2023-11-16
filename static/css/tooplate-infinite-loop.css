@@ -248,6 +248,11 @@ blockquote {
   padding-bottom: 100px;
 }
 
+#widget {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .tm-section-title {
   font-size: 2.6rem;
   font-weight: normal;
